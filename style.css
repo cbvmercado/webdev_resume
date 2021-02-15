@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&family=Roboto:wght@100;300;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #1a1a19;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  /* color: white; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  margin: 15px 0px;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+/* top bar */
+
+header {
+  background-color: black;
+}
+
+.topbar {
+  color: white;
+  /* padding: 20px 0px; */
+}
+
+.toplinks {
+  padding: 0;
+  margin: 0;
+}
+
+.topbar .toplinks li {
+  list-style: none;
+}
+
+.topbar .toplinks li a {
+  color: white;
+  transition: all 0.3s;
+}
+
+.topbar .toplinks li a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
+}
+
+.logo a {
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.logo a:hover {
+  color: rgb(169, 167, 167);
+}
+
+.socials {
+  padding: 0;
+  margin: 0;
+}
+
+.socials a {
+  color: white;
+  transition: all 0.3s;
+}
+
+.socials a:hover {
+  color: rgb(169, 167, 167);
+}
+.socials i {
+  margin: 0 10px;
+}
+
+/* NAVIGATION */
+nav {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+
+.hero {
+  min-height: 400px;
+  background-image: url("hero-bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 3px solid rgb(150, 149, 149);
+}
+
+.hero img {
+  height: auto;
+  width: 285px;
+  border: 12px solid rgb(240, 237, 237);
+  border-radius: 12px;
+  margin: 10px 10px;
+  -webkit-box-shadow: 4px 7px 38px -15px rgba(161, 131, 105, 1);
+  -moz-box-shadow: 4px 7px 38px -15px rgba(161, 131, 105, 1);
+  box-shadow: 4px 7px 38px -15px rgba(161, 131, 105, 1);
+  transition: transform 0.2s ease;
+}
+
+.hero img:hover {
+  transform: translateY(-9px);
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* buttons */
+.btn-black {
+  padding: 10px 20px;
+  background-color: #6a4f3e;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin: 5px 10px;
+  font-weight: 100;
+  font-size: 14px;
+  transition: all 0.3s;
+  display: inline-block;
+  min-width: 200px;
+  /* border: 1px solid black; */
+}
+
+.btn-black:hover {
+  /* border: 1px black solid; */
+  color: #fff;
+  background-color: #000;
+  padding: 10px 20px;
+}
+
+/* ABOUT */
+
+.about a {
+  color: #000;
+}
+
+.about a:hover {
+  color: rgb(169, 167, 167);
+  text-decoration: underline;
+}
+.about-intro {
+  width: 60%;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  min-height: 300px;
+}
+
+.about-intro p {
+  font-size: 18px;
+}
+
+/* SKILLS SECTION */
+
+.skills {
+  min-height: 600px;
+}
+
+.skills .card {
+  transition: transform 0.2s ease;
+}
+
+.skills .card:hover {
+  transform: translateY(-15px);
+}
+
+.skills .card img {
+  padding: 40px;
+  min-width: 90%;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 20px 20px;
+  background-color: black;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: rgb(169, 167, 167);
+}
+
+footer h4 {
+  font-size: 20px;
+  padding: 0;
+  margin-left: 0;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+footer .socials i {
+  margin-left: 0px;
+}
+
+/* UTILS */
+
+section h2,
+h3 {
+  color: #6a4f3e;
+}
+.text-mid-box {
+  width: 60%;
+  padding: 25px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
