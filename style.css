@@ -39,11 +39,11 @@ header {
 }
 
 .topbar {
-  color: white;
+  /* color: white;s */
   /* padding: 20px 0px; */
 }
 
-.toplinks {
+/* .toplinks {
   padding: 0;
   margin: 0;
 }
@@ -60,13 +60,17 @@ header {
 .topbar .toplinks li a:hover {
   border-bottom: 2px solid white;
   padding-bottom: 2px;
-}
+} */
 
+#navbarNav {
+  text-transform: capitalize;
+}
 .navbar-brand,
 .logo a {
   transition: all 0.3s;
   color: #fff;
   text-transform: capitalize !important;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-brand .logo a:hover {
@@ -94,6 +98,13 @@ header {
 nav {
   font-weight: bold;
   text-transform: uppercase;
+  color: #fff;
+}
+
+.nav-link:hover {
+  margin: 0;
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
   color: #fff;
 }
 
