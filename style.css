@@ -18,6 +18,11 @@ a {
   /* color: white; */
 }
 
+a:hover {
+  color: rgb(169, 167, 167);
+}
+
+
 h1,
 h2,
 h3,
@@ -34,14 +39,14 @@ img {
 
 /* top bar */
 
-header {
+/* header {
   background-color: black;
-}
-
+} */
+/* 
 .topbar {
-  /* color: white;s */
-  /* padding: 20px 0px; */
-}
+  color: white;s 
+ padding: 20px 0px;
+} */
 
 /* .toplinks {
   padding: 0;
@@ -73,7 +78,7 @@ header {
   font-family: "Poppins", sans-serif;
 }
 
-.navbar-brand .logo a:hover {
+ .logo a:hover {
   color: rgb(169, 167, 167);
 }
 
@@ -255,6 +260,45 @@ h3 {
   font-size: 18px;
 }
 
+/* Back To Top Button */
+#topbutton {
+  display: none ;
+  background-color: #6a4f3e;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+  cursor: pointer;
+}
+#topbutton:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#topbutton:active {
+  background-color: #555;
+}
+
+#topbutton::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+.show {
+  display: inline-block !important;
+}
+
+
 /* Mobile Responsive */
 
 @media only screen and (max-width: 768px) {
@@ -279,15 +323,10 @@ h3 {
   .text-mid-box {
     width: 90%;
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .hero {
-    text-align: center;
-  }
-
-  .hero img {
-    width: 200px;
-    margin-bottom: 20px;
+  #topbutton {
+    right: -20px;
   }
 }
+
+

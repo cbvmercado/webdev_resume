@@ -19,7 +19,7 @@
 
 
     <header>
-        <nav class="navbar navbar-expand-md py-4 d-flex justify-content-between">
+        <nav class="navbar navbar-expand-md py-4 d-flex justify-content-between navbar-dark bg-dark">
 
             <div class="container">
 
@@ -52,12 +52,14 @@
             </div>
 
         </nav>
+
+
     </header>
 
     <section class="hero py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-xs-6 text-sm-center">
+                <div class="col-lg-3 col-md-6 text-sm-center">
                     <img src="profile.jpg" alt="Chris Mercado" class="m-auto">
                     <div class="contacts-front text-center">
                         <p>email: cbvmercado@gmail.com</p>
@@ -66,7 +68,7 @@
 
                 </div>
                 <div
-                    class="col-md-9 col-xs-6 d-flex flex-column justify-content-center align-items-center text-sm-center text-xs-center">
+                    class="col-lg-9 col-md-6 d-flex flex-column justify-content-center align-items-center text-sm-center text-xs-center">
 
                     <div
                         class="d-flex flex-column justify-content-center align-items-center text-sm-center  text-xs-center">
@@ -118,7 +120,7 @@
         </div>
 
     </section>
-
+    <a id="topbutton"></a>
 
     <section class="skills bg-light py-5" id="skills">
         <div class="container">
@@ -169,7 +171,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <h4>WordPress Custom Themes</h4>
+                            <h4>Custom WP Themes</h4>
                             <img src="wordpress.svg" alt="" class="img-fluid">
                             <p>Conversion of HTML5 page designs into a working WordPress Custom Theme using Underscores
                                 starter theme. This ensures that the theme is light and optimized to full speed.</p>
@@ -283,11 +285,11 @@
             </div>
         </div>
 
-
-
-
-
     </footer>
+
+
+
+
 
     <script>
         // Smoothscroll
@@ -295,17 +297,18 @@
 
             if (this.hash !== "") {
                 event.preventDefault();
-
                 const hash = this.hash;
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top
+                    },
 
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-
-                    window.location.hash = hash;
-
-                });
+                    800,
+                    function () {
+                        window.location.hash = hash;
+                    });
             }
+        });
 
     </script>
 
@@ -317,6 +320,28 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+
+
+    <script>
+        jQuery(document).ready(function () {
+            //back to top
+            var btn = $('#topbutton');
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 200) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+            });
+
+            btn.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, '200');
+            });
+
+        });
+    </script>
 
 </body>
 
